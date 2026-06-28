@@ -1227,22 +1227,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                                             {domain}
                                         </code>
                                      </div>
-                                     <div>
-                                        <label className="text-xs text-slate-500 mb-1 block">访问密码 (Password)</label>
-                                        <div className="flex gap-2">
-                                            <input 
-                                                type="text" 
-                                                value={password} 
-                                                readOnly 
-                                                className="flex-1 p-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded text-sm outline-none font-mono"
-                                                placeholder="未登录 / 未设置"
-                                            />
-                                             <button onClick={() => handleCopy(password, 'pwd')} className="px-3 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 hover:border-blue-500 rounded text-slate-600 dark:text-slate-400 transition-colors">
-                                                {copiedStates['pwd'] ? <Check size={16}/> : <Copy size={16}/>}
-                                            </button>
-                                        </div>
-                                        <p className="text-[10px] text-slate-400 mt-1">此密码对应您部署时设置的 PASSWORD 环境变量。</p>
-                                     </div>
                                 </div>
                             </div>
                         </div>
